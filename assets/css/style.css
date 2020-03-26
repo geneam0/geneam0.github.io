@@ -184,7 +184,7 @@ a:hover {
 
 /*--/ Title Left /--*/
 .title-box-2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .title-left {
@@ -689,8 +689,8 @@ a:hover {
   }
 }
 
-.intro .intro-subtitle {
-  font-size: 1.5rem;
+.intro-subtitle {
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -698,10 +698,6 @@ a:hover {
   .intro .intro-subtitle {
     font-size: 2.5rem;
   }
-}
-
-.intro .text-slider-items {
-  display: none;
 }
 
 .intro-single {
