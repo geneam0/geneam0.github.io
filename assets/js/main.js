@@ -128,4 +128,30 @@
     $('.venobox').venobox();
   });
 
+  // Handle event onclick, setting the cookie when the href != #
+  $('.nav a').click(function (e) {
+    console.log(12);
+
+      e.preventDefault();
+      var id = $(this).data('id');
+      var href = $(this).attr('href');
+      if(href === '#about'){
+          scrollToID(id, 1000);
+      }else{
+          window.location.href = href;
+      }
+  });
+
+  // scrollToID function
+  function scrollToID(id, speed) {
+    console.log(13);
+
+      var offSet = 70;
+      var obj = $('#about' + id);
+      if(obj.length){
+        var offs = obj.offset();
+        var targetOffset = offs.top - offSet;
+        $('html,body').animate({ scrollTop: targetOffset }, speed);
+      }
+  }
 })(jQuery);
