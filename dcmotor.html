@@ -68,7 +68,7 @@
             <div class="post-box">
               <div class="post-thumb">
                 <!-- ======= IMAGE ======= -->
-                <img src = "assets/img/close.JPG" class="img-fluid" alt = "DC Motor"/>
+                <img src = "assets/img/motor/close.JPG" class="img-fluid" alt = "DC Motor"/>
               </div>
               <div class="post-meta">
                 <!-- ======= TITLE ======= -->
@@ -88,25 +88,50 @@
               <!-- ======= POST ======= -->
               <div class="article-content">
                 <p>
-                    Like the Minesweeper game, Connect Four is another project I did during my Junior year of high school. The program contains five classes: ConnectFour, UserPlayer, AIPlayer, Player, and Board. Player is an abstract parent class. Its children, AIPlayer and UserPlayer, were written in case the user wanted to play against someone. ConnectFour is the main program that handles the decisions.
+                  Engineering 101 was one of the first classes I took that solidified my intent in pursuing computer engineering. 
+                <p>Here's my "inspirational" and maybe unnecessary backstory:</p>
+                <p>I entered college as a computer science major, but I never saw myself as a web developer or app developer. 
+                  I liked programming but those weren't interesting to me.
+                  I knew that I enjoyed tinkering, but engineer just wasn't something I ever considered. 
+                  I didn't even know what engineers did.
+                  After exploring around for a bit, I found computer engineering and used my second semester to test the waters out.
+                </p>
+                <p> 
+                  Anyways, my professor was great (albeit old-fashioned).
+                  He gave us a ton of electrical projects to inspire our impressionable minds: radios, speakers, a record player, microphones. 
+                  I had so much fun.
                 </p>
                 <p>
-                    I can't seem to find the AIPlayer.java class, which is unfortunate because I'm interested to see how I implemented minimax. Luckily, the .class file is still there so it works when I run it in the terminal, but I'm surprised I was able to do that. The AI, itself, is notably basic. I played against the computer my first time and I won without a hassle. However, it was able to block my move on occasion.
-                </p>
-                <blockquote class="blockquote">
-                    <p class="mb-0">
-                        The solved conclusion for Connect Four is first player win. With perfect play, the first player can force a win, on or before the 41st move  by starting in the middle column.
-                    </p>
-                </blockquote>
-                <p>
-                    I returned to minimax and board-solving algorithms in my Data Structures class, when we were learning about tree traversal. For my group project, Meriselle and I implemented a Connect Four tree structure and got to the winning board using depth-first search, breadth-first search, minimax, and iterative deepening.
+                  Our final project was a simple DC motor that wasn't so simple. 
+                  The theory behind it is pretty simple. When current flows through a winding wire, it induces a magnetic field powerful enough to generate torque. 
+                  A motor uses this principle to rotate and spin. Heres a <a href="https://www.youtube.com/watch?v=LAtPHANEfQo" style=color:#448fff>video</a> that explains the physics behind it.
                 </p>
                 <p>
-                    I learned the single most important coding rule while working on this project: debug as you code. Meriselle and I worked on the project for weeks and didn't test a single thing. We just assumed it worked. The idea of testing came last. We had a strong idea of how to implement our algorithms but didn't test to see if it even worked.
-                    On the day it was due, we compiled and got a bunch of errors; even our board didn't work. Lucky for me, Meriselle was a research assistant for Timmy (our Data Structures professor) so we nagged him that entire morning. In the end, I got depth-first search to work, but not minimax. I don't even know if Meriselle got her code to work, but I envy my youth for being far wiser than I was that summer.
+                  Physics is ideal, almost too optimistic at times. Actually applying the theory and building the project... not so much. 
+                  Our first mistake happened with the wiring of the motor.
+                  The direction you wind the wires affects the direction that current flows and affects the direction of the magnetic field. 
+                  Here's a video of me testing the polarity of the field magnets and armature magnets:
+                </p>
+                <video width="600" height="328" controls>
+                  <source src="assets/img/motor/motornowork.mov" type="video/mp4">
+                </video>
+                <p>
+                  After we got the write polarity on the magnets, our motor still would not spin. 
+                  We worked on the motor for several weeks, rebuilding the motor at least three times. 
+                  Sometimes, there wasn't enough wiring. Other times, there was too much glue for current to pass. 
+                  We even spoke to the lab technician and he theorized it was the brushes. 
+                  We were using copper brushes so he suggested we tried aluminum, aka the paper clip.
+                  It was really a conglomerate of all these factors that prevented our motor from spinning.
                 </p>
                 <p>
-                  Here is a <a href="https://github.com/genelam26/ConnectFour/" style=color:#448fff>link</a> to the github repository.
+                  The day the project was due, our motor still would not work despite all our attempts. 
+                  Thankfully, our professor - clairvoyant and omniscient - helped us fix our motor. 
+                  He skinned off the excessive glue layer that meddled with the commutator plates. 
+                  He also exposed more wiring and thus, more current to the battery. 
+                  He finally got our motor to work by ramping up the voltage of the car battery to 20V.
+                </p>
+                <p>
+                  Success! Here is a <a href="https://docs.google.com/document/d/1QTtoNLBX1fQqGXoVlQXq2w0qFkgf-B_gHoSAVGLTE68/edit?usp=sharing" style=color:#448fff>link</a> to the report I wrote up with nice drawings.
                 </p>
                 <!--
                 <blockquote class="blockquote">
@@ -114,7 +139,7 @@
                 </blockquote> 
                 -->
                 <video width="600" height="328" controls>
-                  <source src="assets/img/connectfour.mp4" type="video/mp4">
+                  <source src="assets/img/motor/motorworks.mov" type="video/mp4">
                 </video>
               </div>
             </div>
