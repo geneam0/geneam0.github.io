@@ -68,11 +68,11 @@
             <div class="post-box">
               <div class="post-thumb">
                 <!-- ======= IMAGE ======= -->
-                <img src = "assets/img/java/connect4.jpg" class="img-fluid" alt = "Connect 4"/>
+                <img src = "assets/img/java/connectfour.jpg" class="img-fluid" alt = "Connect 4"/>
               </div>
               <div class="post-meta">
                 <!-- ======= TITLE ======= -->
-                <h1 class="article-title">Connect Four</h1>
+                <h1 class="article-title">Minesweeper and Connect Four in Java</h1>
                 <ul>
                   <li>
                     <span class="ion-ios-person"></span>
@@ -81,38 +81,51 @@
                   <li>
                     <!-- ======= DATE ======= -->
                     <span class="ion-android-calendar"></span>
-                    <a href="#">Friday, March 27, 2020 9:04pm</a>
+                    <a href="#">Monday, June 8, 2020 1:56pm</a>
                   </li>
                 </ul>
               </div>
               <!-- ======= POST ======= -->
               <div class="article-content">
+                <h3>Minesweeper</h3>
                 <p>
-                  Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.
+                  Minesweeper is a single-player puzzle video game. 
+                  The objective of the game is to clear a rectangular board containing hidden mines without detonating any of them using clues about the number of neighboring mines in each field.
                 </p>
                 <p>
-                  I wrote this in my AP Computer Science class in my Junior year of high school. Looking back, this code is very inefficient and redundant. Nevertheless, I learned a lot from this project and enjoyed coding it. This game is played in the terminal.
+                  I wrote the code for Minesweeper in my AP Computer Science class during high school. 
+                  Looking back, this code is very inefficient and redundant. 
+                  Nevertheless, I learned a lot from this project and enjoyed coding it. 
+                  The game is played in the terminal.
                 </p>
                 <p>
-                  The program first generates the mine field. It's easy to program in where the mines go or the rate in which they appear (20% in my code). I had a difficult time generating the numbers around the mine. Back then, I had just started learning recursive functions and had no idea what dynamic programming was so I brute-forced my way. For each box in the 2D array, the program counted all the mines surrounding it if it was a corner box, middle box, or side box.
+                  The program first generates the mine field. 
+                  I set the rate of mines as 20% in my code. 
+                  I struggled with generating the numbers around the mine. 
+                  Back then, I had just started learning recursive functions and had no idea what dynamic programming was so I brute-forced my way. 
+                  For each box in the 2D array, the program counted all the mines surrounding it if it was a corner box, middle box, or side box.
                 </p>
                 <p>
-                  The next step for the program was handling user input, which was easy as well. My next rip-my-hair-out moment was if the player hit a zero box. If the player hits a number, that number appears. If they hit a mine, game over. But if they were to hit a 0, the zeroes trigger the surrounding numbers to appear. This was where my recursive training had been tested. But according to my code, it seems like I brute-forced my way around that too, using a bunch of if-statements and calling the same function six times for each if-statement. *sigh* At least it works.
+                  The next step for the program was handling user input. 
+                  My next rip-my-hair-out moment was dealing with instances where the player hit a zero box. 
+                  If the player hits a number, that number appears. 
+                  If they hit a mine, game over. 
+                  But if they were to hit a 0, the zeroes trigger the surrounding numbers to appear.
+                   This was where my recursive training had been tested. 
+                   But according to my code, it seems like I brute-forced my way around that too, using a bunch of if-statements and calling the same function six times for each if-statement. 
+                   *sigh* At least it works.
                 </p>
                 <p>
-                  I remember feeling overjoyed when I finished this project. I had so many rip-my-hair-out moments from trying to figure out efficient algorithms. And when I couldn't do that, all my rip-my-hair-out moments came from writing all the if-statements. Sorry Ms. Qiu. I know you're disappointed by my 426 lines, and I hope you know that I'm cringing on my seat right now with you.
+                  I remember feeling overjoyed when I finished this project. I had so many rip-my-hair-out moments from trying to figure out efficient algorithms. And when I couldn't do that, all my rip-my-hair-out moments came from writing all the if-statements. Sorry Ms. Qiu. I know you're disappointed by my 426 lines, and I hope you know that I'm cringing at my seat with you now.
                 </p>
                 <p>
                   Here is a <a href="https://github.com/genelam26/Minesweeper" style=color:#448fff>link</a> to the github repository.
                 </p>
-                <!--
-                <blockquote class="blockquote">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </blockquote> 
-                -->
                 <video width="600" height="328" controls>
                   <source src="assets/img/java/Minesweeper.mp4" type="video/mp4">
                 </video>
+                <br>
+                <h3>Connect Four</h3>
                 <p>
                     Like the Minesweeper game, Connect Four is another project I did during my Junior year of high school. The program contains five classes: ConnectFour, UserPlayer, AIPlayer, Player, and Board. Player is an abstract parent class. Its children, AIPlayer and UserPlayer, were written in case the user wanted to play against someone. ConnectFour is the main program that handles the decisions.
                 </p>
@@ -135,11 +148,6 @@
                 <p>
                   Here is a <a href="https://github.com/genelam26/ConnectFour/" style=color:#448fff>link</a> to the github repository.
                 </p>
-                <!--
-                <blockquote class="blockquote">
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </blockquote> 
-                -->
                 <video width="600" height="328" controls>
                   <source src="assets/img/java/connectfour.mp4" type="video/mp4">
                 </video>
