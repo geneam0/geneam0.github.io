@@ -89,10 +89,6 @@
               <div class="article-content">
                 <h3>Minesweeper</h3>
                 <p>
-                  Minesweeper is a single-player puzzle video game. 
-                  The objective of the game is to clear a rectangular board containing hidden mines without detonating any of them using clues about the number of neighboring mines in each field.
-                </p>
-                <p>
                   I wrote the code for Minesweeper in my AP Computer Science class during high school. 
                   Looking back, this code is very inefficient and redundant. 
                   Nevertheless, I learned a lot from this project and enjoyed coding it. 
@@ -101,22 +97,24 @@
                 <p>
                   The program first generates the mine field. 
                   I set the rate of mines as 20% in my code. 
-                  I struggled with generating the numbers around the mine. 
-                  Back then, I had just started learning recursive functions and had no idea what dynamic programming was so I brute-forced my way. 
+                  As for generating the numbers around the mine, I couldn't figure out a more efficient method other than by brute force.
                   For each box in the 2D array, the program counted all the mines surrounding it if it was a corner box, middle box, or side box.
                 </p>
                 <p>
-                  The next step for the program was handling user input. 
                   My next rip-my-hair-out moment was dealing with instances where the player hit a zero box. 
                   If the player hits a number, that number appears. 
                   If they hit a mine, game over. 
                   But if they were to hit a 0, the zeroes trigger the surrounding numbers to appear.
-                   This was where my recursive training had been tested. 
-                   But according to my code, it seems like I brute-forced my way around that too, using a bunch of if-statements and calling the same function six times for each if-statement. 
-                   *sigh* At least it works.
+                  This was where my recursive training had been tested. 
+                  But according to my code, it seems like I brute-forced my way around that too, using a bunch of if-statements and calling the same function six times for each if-statement. 
+                  *sigh* At least it works.
                 </p>
                 <p>
-                  I remember feeling overjoyed when I finished this project. I had so many rip-my-hair-out moments from trying to figure out efficient algorithms. And when I couldn't do that, all my rip-my-hair-out moments came from writing all the if-statements. Sorry Ms. Qiu. I know you're disappointed by my 426 lines, and I hope you know that I'm cringing at my seat with you now.
+                  I remember feeling overjoyed when I finished this project. 
+                  I had so many rip-my-hair-out moments from working out efficient algorithms. 
+                  And when I couldn't do that, all my rip-my-hair-out moments came from writing all the if-statements. 
+                  Sorry Ms. Qiu. 
+                  I know you're disappointed by my 426 lines, and I hope you know that I'm cringing at my seat with you now.
                 </p>
                 <p>
                   Here is a <a href="https://github.com/genelam26/Minesweeper" style=color:#448fff>link</a> to the github repository.
@@ -127,23 +125,38 @@
                 <br>
                 <h3>Connect Four</h3>
                 <p>
-                    Like the Minesweeper game, Connect Four is another project I did during my Junior year of high school. The program contains five classes: ConnectFour, UserPlayer, AIPlayer, Player, and Board. Player is an abstract parent class. Its children, AIPlayer and UserPlayer, were written in case the user wanted to play against someone. ConnectFour is the main program that handles the decisions.
+                    Like the Minesweeper game, Connect Four is another project I did during my Junior year of high school. 
+                    The program contains five classes: ConnectFour, UserPlayer, AIPlayer, Player, and Board. 
+                    Player is an abstract parent class. 
+                    Its children, AIPlayer and UserPlayer, were written in case the user wanted to play against someone. 
+                    ConnectFour is the main program that handles the decisions.
                 </p>
                 <p>
-                    I can't seem to find the AIPlayer.java class, which is unfortunate because I'm interested to see how I implemented minimax. Luckily, the .class file is still there so it works when I run it in the terminal, but I'm surprised I was able to do that. The AI, itself, is notably basic. I played against the computer my first time and I won without a hassle. However, it was able to block my move on occasion.
+                    I can't seem to find the AIPlayer.java class, which is unfortunate because I'm interested to see how I implemented minimax. 
+                    Luckily, the .class file is still there so the program works when I run it in the terminal. 
+                    The AI, itself, is notably basic. 
+                    I played against the computer my first time and I won without a hassle. 
+                    However, it was able to block my move occasionally.
                 </p>
                 <blockquote class="blockquote">
                     <p class="mb-0">
-                        The solved conclusion for Connect Four is first player win. With perfect play, the first player can force a win, on or before the 41st move  by starting in the middle column.
+                        The solved conclusion for Connect Four is first player win. 
+                        With perfect play, the first player can force a win, on or before the 41st move  by starting in the middle column.
                     </p>
                     <a href="https://en.wikipedia.org/wiki/Connect_Four">Wikipedia</a>
                 </blockquote>
                 <p>
-                    I returned to minimax and board-solving algorithms in my Data Structures class, when we were learning about tree traversal. For my group project, Meriselle and I implemented a Connect Four tree structure and got to the winning board using depth-first search, breadth-first search, minimax, and iterative deepening.
+                    I returned to minimax and board-solving algorithms in my Data Structures class, when we were learning about tree traversal. 
+                    For my group project, Meriselle and I implemented a Connect Four tree structure and got to the winning board using depth-first search, breadth-first search, minimax, and iterative deepening.
                 </p>
                 <p>
-                    I learned the single most important coding rule while working on this project: debug as you code. Meriselle and I worked on the project for weeks and didn't test a single thing. We just assumed it worked. The idea of testing came last. We had a strong idea of how to implement our algorithms but didn't test to see if it even worked.
-                    On the day it was due, we compiled and got a bunch of errors; even our board didn't work. Lucky for me, Meriselle was a research assistant for Timmy (our Data Structures professor) so we nagged him that entire morning. In the end, I got depth-first search to work, but not minimax. I don't even know if Meriselle got her code to work, but I envy my youth for being far wiser than I was that summer.
+                    I learned the single most important coding rule while working on this project: debug as you code. 
+                    Meriselle and I worked on the project for weeks and didn't test a single thing. 
+                    We had a strong idea of how to implement our algorithms but didn't test to see if it even worked.
+                    On the day it was due, we compiled and got a bunch of errors; even our board didn't work. 
+                    Luckily, Meriselle was a research assistant for our Data Structures professor so we nagged him that entire morning. 
+                    In the end, I got depth-first search to work, but not minimax. 
+                    I don't even know if Meriselle got her code to work, but I envy my youth for being far wiser than I was that summer.
                 </p>
                 <p>
                   Here is a <a href="https://github.com/genelam26/ConnectFour/" style=color:#448fff>link</a> to the github repository.
@@ -176,7 +189,10 @@
                     <a href="#">Minimax</a>
                   </li>
                   <li>
-                    <a href="#">Data Structures and Algorithms</a>
+                    <a href="#">Data Structures</a>
+                  </li>
+                  <li>
+                    <a href="#">Algorithms</a>
                   </li>
                   <li>
                     <a href="#">Public Speaking</a>
